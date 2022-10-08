@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang='en' prefix="og: http://ogp.me/ns#" translate="no">
+
+<head>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-59ZWXRZ');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-82PPSJMDVX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-82PPSJMDVX');
+  </script>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ш++</title>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="[shpp] Easter-Egg">
+  <meta property="og:description" content="Game developed by ddteam©">
+  <meta property="og:url" content="https://ddteam.surge.sh">
+  <meta property="og:image" content="shpp.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+  <style>
+    body {
+      margin: 0%;
+      padding: 0%;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://programming.org.ua/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59ZWXRZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="background" class="day">
+    <div id="GameOverMenu">
+      <div id="GameOverText">GAME OVER</div>
+      <span id="GameOverShText">
+        Ш =
+        <span id="GameOverShScore" class='highscore'>0</span>
+      </span>
+      <div id="GameOverRestartButton" onclick="restartAnim()">
+        <svg id="restartSvg" width="39" height="43" viewBox="0 0 39 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.5562 42.8795C30.182 41.9132 37.0949 35.0179 38.0787 26.3921C39.3699 15.1136 30.6036 5.51285 19.615 5.38987V0.330358C19.615 0.0492735 19.2636 -0.100052 19.0264 0.0756251L8.60875 7.72638C8.43307 7.85814 8.43307 8.11287 8.60875 8.24463L19.0264 15.8954C19.2636 16.0711 19.615 15.913 19.615 15.6407V10.5899C27.336 10.7129 33.5198 17.2832 32.9928 25.136C32.5448 31.8908 27.0373 37.372 20.2825 37.8024C13.1237 38.2591 7.03644 33.1469 5.94724 26.3833C5.74521 25.1272 4.64722 24.2137 3.38234 24.2137C1.81003 24.2137 0.580284 25.6104 0.826233 27.1651C2.35463 36.801 11.2527 44.0302 21.5562 42.8795Z"
+            fill="#F8F8F8" />
+        </svg>
+      </div>
+    </div>
+    <div id="tutorial">
+      <div id="moveRight" class="idle">
+        <div class="arrow">
+          <div class="desktop">
+            <div class="idle">
+              <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 14.5C2 12.5 2 3 14.5 2L61 48.5C60 61 50.5 61 48.5 61H10.5C6.91015 61 2 56.0899 2 52.5V14.5Z"
+                  fill="#C4C4C4" stroke="#3D3D3D" stroke-width="3" />
+                <rect x="8.5" y="1.5" width="53" height="53" rx="6.5" fill="white" stroke="#3D3D3D" stroke-width="3" />
+                <path
+                  d="M47.5607 29.0607C48.1464 28.4749 48.1464 27.5251 47.5607 26.9393L38.0147 17.3934C37.4289 16.8076 36.4792 16.8076 35.8934 17.3934C35.3076 17.9792 35.3076 18.9289 35.8934 19.5147L44.3787 28L35.8934 36.4853C35.3076 37.0711 35.3076 38.0208 35.8934 38.6066C36.4792 39.1924 37.4289 39.1924 38.0147 38.6066L47.5607 29.0607ZM46.5 26.5H23V29.5H46.5V26.5Z"
+                  fill="#3D3D3D" />
+              </svg>
+            </div>
+            <div class="pressed">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 50.5V12.5C2 5 6 1.5 14.5 1.5L59.5 49C59.5 58.5 54 59 48.5 59H10.5C6.91015 59 2 54.0899 2 50.5Z"
+                  fill="#C4C4C4" stroke="#3D3D3D" stroke-width="3" />
+                <rect x="6.5" y="1.5" width="53" height="53" rx="6.5" fill="white" stroke="#3D3D3D" stroke-width="3" />
+                <path
+                  d="M45.5607 29.0607C46.1464 28.4749 46.1464 27.5251 45.5607 26.9393L36.0147 17.3934C35.4289 16.8076 34.4792 16.8076 33.8934 17.3934C33.3076 17.9792 33.3076 18.9289 33.8934 19.5147L42.3787 28L33.8934 36.4853C33.3076 37.0711 33.3076 38.0208 33.8934 38.6066C34.4792 39.1924 35.4289 39.1924 36.0147 38.6066L45.5607 29.0607ZM44.5 26.5H21V29.5H44.5V26.5Z"
+                  fill="#3D3D3D" />
+              </svg>
+            </div>
+          </div>
+          <div class="mobile">
+            <div class="idle">
+              <svg width="67" height="98" viewBox="0 0 67 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M40.5113 95.7204L40.5389 95.7162L40.5664 95.7109C42.9575 95.2537 44.3093 94.8998 46.6165 94.0895L46.6406 94.081L46.6645 94.0717C60.28 88.7606 67.6897 74.0934 63.9027 59.9602L58.9399 41.4385C58.0413 38.0852 54.5852 36.0896 51.2316 36.9881C47.878 37.8867 45.8827 41.3431 46.7812 44.6964L47.6084 47.7834C47.6224 47.8356 47.5915 47.8893 47.5391 47.9033C47.4868 47.9173 47.4332 47.8863 47.4192 47.834L45.7649 41.6601C44.8664 38.3068 41.4102 36.3112 38.0566 37.2098C34.7031 38.1084 32.7078 41.5647 33.6063 44.918L35.2606 51.0919C35.2746 51.1442 35.2437 51.1978 35.1913 51.2119C35.139 51.2259 35.0854 51.1949 35.0714 51.1426L32.59 41.8818C31.6914 38.5285 28.2353 36.5328 24.8817 37.4314C21.5281 38.33 19.5328 41.7863 20.4313 45.1397L22.9128 54.4005C22.9268 54.4528 22.8959 54.5064 22.8435 54.5204C22.7912 54.5345 22.7376 54.5035 22.7236 54.4512L14.4246 23.4788C13.5261 20.1255 10.0699 18.1299 6.71633 19.0284C3.36274 19.927 1.36744 23.3834 2.26596 26.7367L13.8735 70.0567C13.8875 70.109 13.8566 70.1626 13.8043 70.1766C13.7519 70.1907 13.6984 70.1597 13.6843 70.1074L10.8605 59.5687L10.3108 57.5173L8.56131 58.7212C6.43081 60.1872 5.3362 62.8906 6.04538 65.5373L8.52682 74.7981C12.3137 88.9312 26.0643 97.9284 40.5113 95.7204Z"
+                  fill="white" stroke="#3D3D3D" stroke-width="3" />
+              </svg>
+            </div>
+            <div class="pressed">
+              <svg width="85" height="112" viewBox="0 0 85 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.0517 17.5347C15.1993 17.7631 14.6934 18.6391 14.9218 19.4917L16.5761 25.6656C16.8046 26.5182 17.6807 27.0239 18.5332 26.7955C19.3856 26.5671 19.8915 25.6911 19.663 24.8385L18.0088 18.6646C17.7803 17.812 16.9041 17.3063 16.0517 17.5347Z"
+                  fill="#3D3D3D" />
+                <path
+                  d="M11.3683 30.6154L5.83305 27.4192C5.0689 26.9782 4.09153 27.2401 3.65045 28.004C3.20933 28.7686 3.47112 29.7456 4.23537 30.187L9.77076 33.383C10.1528 33.6037 10.5884 33.6486 10.9832 33.5428C11.3782 33.4369 11.7329 33.1804 11.9534 32.7984C12.3945 32.0338 12.1327 31.0568 11.3683 30.6154Z"
+                  fill="#3D3D3D" />
+                <path
+                  d="M32.0266 20.4009C31.2624 19.9598 30.2851 20.2217 29.844 20.9857L26.6482 26.5212C26.207 27.2856 26.4689 28.2628 27.2331 28.704C27.6151 28.9245 28.0505 28.9694 28.4455 28.8636C28.8403 28.7578 29.1951 28.5012 29.4157 28.1192L32.6115 22.5837C33.0527 21.8195 32.7908 20.8423 32.0266 20.4009Z"
+                  fill="#3D3D3D" />
+                <path
+                  d="M52.0726 102.43L52.1003 102.426L52.1277 102.42C54.5189 101.963 55.8707 101.609 58.1778 100.799L58.202 100.79L58.2258 100.781C71.8414 95.4701 79.2511 80.803 75.4641 66.6698L70.5012 48.1481C69.6027 44.7948 66.1465 42.7992 62.793 43.6978C59.4394 44.5963 57.4441 48.0527 58.3426 51.406L59.1698 54.493C59.1838 54.5453 59.1529 54.5989 59.1005 54.6129C59.0482 54.6269 58.9946 54.5959 58.9806 54.5436L57.3263 48.3697C56.4278 45.0164 52.9716 43.0208 49.618 43.9194C46.2644 44.818 44.2691 48.2743 45.1677 51.6276L46.822 57.8015C46.836 57.8538 46.8051 57.9074 46.7527 57.9215C46.7004 57.9355 46.6468 57.9045 46.6328 57.8522L44.1514 48.5914C43.2528 45.2381 39.7967 43.2424 36.4431 44.141C33.0895 45.0396 31.0942 48.496 31.9927 51.8493L34.4742 61.1101C34.4882 61.1624 34.4573 61.216 34.4049 61.2301C34.3526 61.2441 34.299 61.2131 34.285 61.1608L27.4628 35.7002C26.5643 32.3469 23.1082 30.3513 19.7546 31.2498C16.401 32.1484 14.4057 35.6048 15.3042 38.9581L25.4349 76.7663C25.4489 76.8186 25.418 76.8722 25.3657 76.8862C25.3133 76.9003 25.2597 76.8693 25.2457 76.817L22.4219 66.2783L21.8722 64.2269L20.1227 65.4308C17.9922 66.8968 16.8976 69.6002 17.6068 72.2469L20.0882 81.5077C23.8751 95.6408 37.6257 104.638 52.0726 102.43Z"
+                  fill="white" stroke="#3D3D3D" stroke-width="3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="moveLeft" class="idle">
+        <div class="arrow">
+          <div class="desktop">
+            <div class="idle">
+              <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 14.5C2 12.5 2 3 14.5 2L61 48.5C60 61 50.5 61 48.5 61H10.5C6.91015 61 2 56.0899 2 52.5V14.5Z"
+                  fill="#C4C4C4" stroke="#3D3D3D" stroke-width="3" />
+                <rect x="8.5" y="1.5" width="53" height="53" rx="6.5" fill="white" stroke="#3D3D3D" stroke-width="3" />
+                <path
+                  d="M21.9393 26.9393C21.3536 27.5251 21.3536 28.4749 21.9393 29.0607L31.4853 38.6066C32.0711 39.1924 33.0208 39.1924 33.6066 38.6066C34.1924 38.0208 34.1924 37.0711 33.6066 36.4853L25.1213 28L33.6066 19.5147C34.1924 18.9289 34.1924 17.9792 33.6066 17.3934C33.0208 16.8076 32.0711 16.8076 31.4853 17.3934L21.9393 26.9393ZM46.5 26.5H23V29.5H46.5V26.5Z"
+                  fill="#3D3D3D" />
+              </svg>
+            </div>
+            <div class="pressed">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 50.5V12.5C2 5 6 1.5 14.5 1.5L59.5 49C59.5 58.5 54 59 48.5 59H10.5C6.91015 59 2 54.0899 2 50.5Z"
+                  fill="#C4C4C4" stroke="#3D3D3D" stroke-width="3" />
+                <rect x="6.5" y="1.5" width="53" height="53" rx="6.5" fill="white" stroke="#3D3D3D" stroke-width="3" />
+                <path
+                  d="M19.9393 26.9393C19.3536 27.5251 19.3536 28.4749 19.9393 29.0607L29.4853 38.6066C30.0711 39.1924 31.0208 39.1924 31.6066 38.6066C32.1924 38.0208 32.1924 37.0711 31.6066 36.4853L23.1213 28L31.6066 19.5147C32.1924 18.9289 32.1924 17.9792 31.6066 17.3934C31.0208 16.8076 30.0711 16.8076 29.4853 17.3934L19.9393 26.9393ZM44.5 26.5H21V29.5H44.5V26.5Z"
+                  fill="#3D3D3D" />
+              </svg>
+            </div>
+          </div>
+          <div class="mobile">
+            <div class="idle">
+              <svg width="67" height="98" viewBox="0 0 67 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.7151 95.8144L26.6876 95.8103L26.6602 95.8052C24.253 95.358 22.8919 95.0097 20.5669 94.2086L20.5428 94.2003L20.519 94.1912C6.79905 88.9355 -0.754923 74.2834 2.96095 60.1069L7.82898 41.5349C8.71177 38.167 12.1752 36.1611 15.5427 37.0433C18.9102 37.9255 20.9445 41.3717 20.0617 44.7396L19.2504 47.835C19.2381 47.8819 19.265 47.9421 19.3291 47.9589C19.3932 47.9757 19.4462 47.9364 19.4585 47.8895L21.0812 41.6988C21.964 38.3309 25.4274 36.325 28.7949 37.2072C32.1624 38.0894 34.1967 41.5356 33.3139 44.9035L31.6912 51.0942C31.6789 51.1411 31.7059 51.2013 31.77 51.2181C31.834 51.2349 31.8871 51.1957 31.8994 51.1487L34.3334 41.8627C35.2162 38.4948 38.6796 36.4888 42.0471 37.371C45.4146 38.2533 47.4489 41.6995 46.5661 45.0674L44.1321 54.3534C44.1198 54.4003 44.1467 54.4605 44.2108 54.4773C44.2749 54.4941 44.3279 54.4549 44.3402 54.4079L52.4807 23.3514C53.3634 19.9835 56.8269 17.9775 60.1943 18.8597C63.5618 19.7419 65.5962 23.1881 64.7134 26.5561L53.3276 69.9937C53.3153 70.0407 53.3423 70.1009 53.4064 70.1177C53.4705 70.1345 53.5235 70.0952 53.5358 70.0483L56.3057 59.4809L56.8433 57.4298L58.5984 58.6194C60.7457 60.0747 61.8672 62.7754 61.1707 65.4329L58.7367 74.7189C55.0208 88.8951 41.2501 97.9607 26.7151 95.8144Z"
+                  fill="white" stroke="#3D3D3D" stroke-width="3" />
+              </svg>
+            </div>
+            <div class="pressed">
+              <svg width="85" height="112" viewBox="0 0 85 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M68.9483 17.5347C69.8007 17.7631 70.3066 18.6391 70.0782 19.4917L68.4239 25.6656C68.1954 26.5182 67.3193 27.0239 66.4668 26.7955C65.6144 26.5671 65.1085 25.6911 65.337 24.8385L66.9912 18.6646C67.2197 17.8119 68.0959 17.3062 68.9483 17.5347Z"
+                  fill="#3D3D3D" />
+                <path
+                  d="M73.6317 30.6154L79.1669 27.4192C79.9311 26.9782 80.9085 27.2401 81.3496 28.004C81.7907 28.7686 81.5289 29.7456 80.7646 30.187L75.2292 33.383C74.8472 33.6037 74.4116 33.6486 74.0168 33.5428C73.6218 33.4369 73.2671 33.1804 73.0466 32.7984C72.6055 32.0338 72.8673 31.0568 73.6317 30.6154Z"
+                  fill="#3D3D3D" />
+                <path
+                  d="M52.9734 20.4008C53.7376 19.9598 54.7149 20.2217 55.156 20.9857L58.3518 26.5212C58.793 27.2856 58.5311 28.2628 57.7669 28.704C57.3849 28.9245 56.9495 28.9694 56.5545 28.8635C56.1597 28.7578 55.8049 28.5011 55.5843 28.1191L52.3885 22.5836C51.9473 21.8194 52.2092 20.8422 52.9734 20.4008Z"
+                  fill="#3D3D3D" />
+                <path
+                  d="M32.9274 102.43L32.8997 102.426L32.8723 102.42C30.4811 101.963 29.1293 101.609 26.8222 100.799L26.798 100.79L26.7742 100.781C13.1586 95.4701 5.7489 80.803 9.53589 66.6698L14.4988 48.1481C15.3973 44.7948 18.8535 42.7991 22.207 43.6977C25.5606 44.5963 27.5559 48.0527 26.6574 51.406L25.8302 54.4929C25.8162 54.5452 25.8471 54.5989 25.8995 54.6129C25.9518 54.6269 26.0054 54.5959 26.0194 54.5436L27.6737 48.3697C28.5722 45.0164 32.0284 43.0208 35.382 43.9194C38.7356 44.818 40.7309 48.2743 39.8323 51.6276L38.178 57.8015C38.164 57.8538 38.1949 57.9074 38.2473 57.9215C38.2996 57.9355 38.3532 57.9045 38.3672 57.8522L40.8486 48.5914C41.7472 45.238 45.2033 43.2424 48.5569 44.141C51.9105 45.0396 53.9058 48.4959 53.0073 51.8493L50.5258 61.1101C50.5118 61.1624 50.5427 61.216 50.5951 61.23C50.6474 61.2441 50.701 61.2131 50.715 61.1608L57.5372 35.7002C58.4357 32.3469 61.8918 30.3512 65.2454 31.2498C68.599 32.1484 70.5943 35.6048 69.6958 38.9581L59.5651 76.7663C59.5511 76.8186 59.582 76.8722 59.6343 76.8862C59.6867 76.9002 59.7403 76.8693 59.7543 76.817L62.5781 66.2783L63.1278 64.2269L64.8773 65.4308C67.0078 66.8968 68.1024 69.6002 67.3932 72.2469L64.9118 81.5077C61.1249 95.6408 47.3743 104.638 32.9274 102.43Z"
+                  fill="white" stroke="#3D3D3D" stroke-width="3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backgroundImage"></div>
+  </div>
+  <div id="start"></div>
+  <script src="https://pixijs.download/v6.1.0-rc.2/pixi.js"></script>
+  <script src="js/gameLogic.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/pushingPluses.js"></script>
+  <script src="js/catchers.js"></script>
+  <script src="js/start.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/goldPlus.js"></script>
+  <script src="js/blastPluses.js"></script>
+  <script>
+    function restartAnim() {
+      let restartButton = document.getElementById("GameOverRestartButton");
+      restartButton.style.animation = ".25s ease-in changeColor";
+      setTimeout(restart, 250)
+    }
+
+    function restart() {
+      let restartButton = document.getElementById("GameOverRestartButton");
+      restartButton.style.animation = '';
+      initialization();
+    }
+
+    function changeColor(a, b) {
+      if (b === 1) {
+        let q = document.getElementById(a);
+        q.style.backgroundColor = "black";
+      }
+
+      if (b === 0) {
+        let y = document.getElementById(a);
+
+        y.style.backgroundColor = "white";
+      }
+    }
+    let backgroundImage = document.getElementById("backgroundImage");
+    let di = document.getElementById("background");
+
+    let leftWasPressed = false,
+      rightWasPressed = false;
+    const pressLeft = b => {
+      state.leftPressed = b;
+      if (b)
+        leftWasPressed = true;
+      if (leftWasPressed && rightWasPressed)
+        tutorialStop();
+    }
+    const pressRight = b => {
+      state.rightPressed = b;
+      if (b)
+        rightWasPressed = true;
+      if (leftWasPressed && rightWasPressed)
+        tutorialStop();
+    }
+
+    function KeyDownHandler(e) {
+      if (e.keyCode === 39) {
+        pressRight(true);
+      }
+      if (e.keyCode === 37) {
+        pressLeft(true);
+      }
+    }
+
+    function KeyUpHandler(e) {
+      if (e.keyCode === 39) {
+        pressRight(false);
+      }
+      if (e.keyCode === 37) {
+        pressLeft(false);
+      }
+    }
+    document.addEventListener("keydown", KeyDownHandler, false);
+    document.addEventListener("keyup", KeyUpHandler, false);
+
+    function TouchStartHandler(e) {
+      if (state.startGame) {
+        const touch = e.changedTouches?.[0];
+        if (touch.clientX < Width / 2)
+          pressLeft(true);
+        else
+          pressRight(true);
+      }
+    }
+
+    function TouchEndHandler(e) {
+      if (!state.startGame) {
+        restart();
+      } else {
+        pressLeft(false);
+        pressRight(false);
+      }
+    }
+    document.addEventListener('touchstart', TouchStartHandler, false);
+    document.addEventListener('touchend', TouchEndHandler, false);
+
+
+    function MoveSh() {
+      if (state.rightPressed && state.sh.x + state.fontSize < innerWidth) {
+        state.sh.x += config.shSpeed;
+      }
+      if (state.leftPressed && 0 < state.sh.x) {
+        state.sh.x -= config.shSpeed;
+      }
+    }
+
+    function PlusMover() {
+      for (let i = 0; i < state.pluses.falling.length; i++) {
+        if (!state.pluses.falling[i].catched) {
+          state.pluses.falling[i].y += state.pluses.falling[i].speed * state.deltaTime * state.worldSpeed;
+        }
+      }
+    }
+
+    function IsGameOver() {
+
+      for (let i = 0; i < state.pluses.falling.length; i++) {
+        let falling = state.pluses.falling[i]
+        let plusSize = state.plusRealSize
+        if (
+          falling.y > state.shSizes.y - state.shSizes.h &&
+          falling.y < state.shSizes.y) {
+          if ((
+              (falling.x > state.shSizes.x &&
+                falling.x < state.shSizes.x + state.shSizes.w &&
+                falling.x + plusSize.width > state.shSizes.x &&
+                falling.x + plusSize.width < state.shSizes.x + state.shSizes.w) ||
+              (falling.x > state.shSizes.x &&
+                falling.x < state.shSizes.x + state.shSizes.w) ||
+              (falling.x + plusSize.width > state.shSizes.x &&
+                falling.x + plusSize.width < state.shSizes.x + state.shSizes.w)
+            ) &&
+            !falling.catched &&
+            !falling.kill
+          ) {
+
+            falling.kill = true;
+            app.stage.removeChild(falling);
+
+            return true;
+          }
+        }
+      }
+      return false;
+    }
+    //Игровой счет -----------------------------------------------------------------------------------
+    //Анимация взрыва плюсов -------------------------------------------------------------------------------------
+    function GameOverBlastAnim() {
+      for (let i = 0; i < state.pluses.gold.length; i++) {
+        let goldPlus = state.pluses.gold[i];
+
+        goldPlus.x += goldPlus.Xshag;
+        goldPlus.y += goldPlus.Yshag;
+        goldPlus.rotation += goldPlus.rotationStep;
+        goldPlus.Yshag += config.gravity;
+      }
+      for (let i = 0; i < state.pluses.caughtPluses.length; i++) {
+        let plusCaught = state.pluses.caughtPluses[i];
+
+        plusCaught.x += plusCaught.Xshag;
+        plusCaught.y += plusCaught.Yshag;
+        plusCaught.Yshag += config.gravity;
+        plusCaught.rotation += plusCaught.rotationStep;
+      }
+
+      state.sh.x += state.sh.shag.x;
+      state.sh.y += state.sh.shag.y;
+      state.sh.rotation += state.sh.rotationStep
+      state.greyPlus.rotation += state.sh.rotationStep
+      state.sh.shag.y += config.gravity;
+      state.greyPlus.x += state.greyPlus.shag.x;
+      state.greyPlus.y += state.greyPlus.shag.y;
+      state.greyPlus.shag.y += config.gravity;
+    }
+
+    function dayMode() {
+
+      di.className = 'day';
+      state.sh.style.fill = "black"
+      state.sh.style.stroke = "black"
+      // state.greyPlus.style.stroke = "#3D3D3D"
+      // state.greyPlus.style.fill = "#F8F8F8"
+      state.scoreObject.style.fill = "#27AE60"
+      state.scoreObject.style.stroke = "#27AE60"
+    }
+
+    function nightMode() {
+      di.className = 'night';
+      state.sh.style.fill = "white"
+      state.sh.style.stroke = "white"
+      // state.greyPlus.style.stroke = "white"
+      // state.greyPlus.style.fill = "#3D3D3D"
+      state.scoreObject.style.fill = "#FFD700"
+      state.scoreObject.style.stroke = "#FFD700"
+    }
+
+
+
+    function difficultGame() {
+      state.difficult = state.pluses.gold.length
+      let a = state.difficult;
+      if (a % 2 === 0) {
+        dayMode()
+      } else {
+        nightMode()
+      }
+
+    }
+
+    function Update() {
+      state.scoreObject.x = innerWidth * 0.9;
+      state.shSizes.w = state.shRealSize.width;
+      state.shSizes.h = state.shRealSize.height;
+      state.shSizes.x = state.sh.x;
+      state.shSizes.y = state.sh.y + state.shRealSize.height / 2;
+      state.sh.y = innerHeight - state.sh.style.fontSize;
+
+      for (let i = 0; i < state.pluses.falling.length; i++) {
+        if (state.pluses.falling[i].y > innerHeight) {
+          app.stage.removeChild(state.pluses.falling[i])
+          state.pluses.falling.splice(i, 1);
+        }
+      }
+
+      if (state.pluses.gold.length > 0) {
+        for (let i = 0; i < state.pluses.gold.length; i++) {
+          if (state.pluses.gold[i].catched) {
+            state.pluses.gold[i].x = state.sh.x + config.greyDist + (config.catchedPlusesDist * (1 + i))
+            state.pluses.gold[i].y = state.sh.y
+          }
+        }
+      }
+
+      if (state.pluses.caughtPluses.length > 0) {
+        state.greyPlus.x = state.sh.x + config.greyDist + (config.catchedPlusesDist * (state.pluses.caughtPluses
+          .length + 1 + state.catchedGoldPluses));
+            state.greyPlus.y = state.sh.y
+        for (let i = 0; i < state.pluses.caughtPluses.length; i++) {
+          state.pluses.caughtPluses[i].x = state.sh.x + config.greyDist + (config.catchedPlusesDist * (1 + i + state.catchedGoldPluses));
+        }
+      } else {
+        state.greyPlus.x = state.sh.x + config.greyDist + config.catchedPlusesDist * (state.pluses.caughtPluses.length +
+          1 + state.catchedGoldPluses);
+        state.greyPlus.y = state.sh.y
+      }
+    }
+    let prevFrame = 0;
+    app.ticker.add(() => {
+      const now = Date.now();
+      state.deltaTime = Math.min(6, (now - prevFrame) / 16);
+      prevFrame = now;
+
+      if (state.startGame) {
+        FallingPlusCreater();
+        PlusMover();
+        if (!state.stop) {
+          PlusCatcher();
+          GoldPlusMove();
+          GameScore();
+          BlastPlusesNextSh();
+          Update();
+          isAllGoldPlusesCatched()
+          BoomPlusesMove();
+          MoveSh();
+          CatcherAnimCaller();
+          SayNumberKnockedPlusCaller();
+          ScoreVariablesRemove();
+          GoldPlus();
+          GoldPlAnim();
+          GoldCatcher();
+          difficultGame();
+          TransformPlusDelete();
+        } else {
+          GameOverBlastAnim();
+          openMenu("Open");
+        }
+        if (IsGameOver()) {
+
+          if (!state.stop) {
+            tutorialStop();
+            window.navigator.vibrate([50, 25, 25]);
+            const STORAGE_KEY = 'shpp-highscore';
+            const savedHighscore = parseInt(localStorage.getItem(STORAGE_KEY));
+
+            let isHighscore = (state.recordScore > savedHighscore || isNaN(savedHighscore));
+            if (isHighscore)
+              localStorage.setItem(STORAGE_KEY, state.recordScore);
+              gtag('event', 'max_score', {
+              'score': state.recordScore,
+            });
+
+              gtag('get', 'G-82PPSJMDVX', 'max_score', (max_score)=>console.log(max_score))
+            const shScore = document.getElementById('GameOverShScore');
+            shScore.className = isHighscore ? 'highscore' : '';
+          }
+
+          state.stop = true;
+        }
+      }
+    });
+
+    const shouldTutorialStart = true;
+    let freezerTicker = null,
+      tutorialIsStopping = false;
+    const freezeIntensity = .1;
+    const freezeTransitionDuration = 500;
+
+    function tutorialStart() {
+      const tutorial = document.getElementById('tutorial');
+      tutorial.className = 'shown';
+
+      const start = Date.now();
+      freezerTicker = () => {
+        state.worldSpeed = Math.max(
+          (1 - (Date.now() - start) / freezeTransitionDuration) * freezeIntensity,
+          freezeIntensity
+        );
+      }
+
+      app.ticker.add(freezerTicker);
+    }
+
+    function tutorialStop() {
+      if (freezerTicker === null || tutorialIsStopping)
+        return;
+
+      tutorialIsStopping = true;
+      setTimeout(() => {
+        const tutorial = document.getElementById('tutorial');
+        tutorial.className = '';
+
+        app.ticker.remove(freezerTicker);
+        const start = Date.now();
+        const thawTicker = () => {
+          state.worldSpeed = Math.min(
+            freezeIntensity + ((Date.now() - start) / freezeTransitionDuration) * (1 - freezeIntensity),
+            1
+          );
+        }
+        app.ticker.add(thawTicker);
+        setTimeout(() => {
+          app.ticker.remove(thawTicker)
+        }, freezeTransitionDuration);
+      }, 500);
+    }
+
+    if (shouldTutorialStart)
+      setTimeout(tutorialStart, 1000);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+#background {
+    position: absolute;
+    width: 100%;
+    transition: background-color 0.5s ease-in-out;
+    height: 100%;
+    background-color: #DAF7A6;
+    resize: both;
+    overflow: hidden;
+}
+#background.day {
+    background-color: #F8F8F8;
+}
+#background.day > #backgroundImage {
+    opacity: 0.05;
+    filter: invert(1);
+}
+#background.night {
+    background-color: #3D3D3D;
+}
+#background.night > #backgroundImage {
+    opacity: 0.05;
+    filter: invert(0);
+}
+#background.night > #GameOverText,
+#background.night > #GameOverShText {
+    filter: invert(1);
+}
+/* @media (max-width: 800px) {
+    #backgroundImage {
+        transform: rotate(90deg);
+    }
+} */
+#backgroundImage {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    background-position: center;
+    background-image: url(https://programming.org.ua/img/galaxyrefitstarboard.png); 
+    opacity: 0.05;
+    filter: invert(1);
+    transition-property: filter, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#start {
+    overflow: hidden;
+    font-family: "Play";
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    resize: both;
+    overflow: hidden;
+    transition: all 4s; 
+    color: rgba(0, 0, 0, 1);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: 900px) {
+    #backgroundImage {
+        transform: rotate(90deg);
+        width: 100vh;
+    }
+    #GameOverText {
+        /* top: 60vw; */
+    }
+}
+@keyframes changeColor {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#addBackground {
+    background-color: #FFD700;
+    z-index: 1000;
+    border-radius: 8%;
+    position: absolute;
+    width: 5vw;
+    left: 52vw;
+    top: 33vh;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 4vw;
+    line-height: 5vh;
+    padding-bottom: 4%;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+}
+/*<----------------start-animations---------------->*/
+#moveRight, #moveLeft {
+    z-index: 10;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    top: 0%;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 4vw;
+    line-height: 90%;
+    resize: both;
+    color: #3D3D3D;
+    padding-top: 75vh;
+}
+#moveLeft {
+    left: 0;
+    right: 50%;
+}
+#back {
+    z-index: 10;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    left: 30%;
+    transition: 1s;
+    margin: auto;
+    top: 50%;
+    background-color: turquoise;
+    resize: both;
+}
+#arrowRight {
+    z-index: 10;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 50%;
+    margin: auto;
+    top: 50%;
+    resize: both;
+}
+
+
+#GameOverMenu {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0 auto;
+    padding: 20vh 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 100500;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+@media (max-width: 800px) {
+    #GameOverMenu {
+        width: 85%;
+    }
+}
+#GameOverMenu.open {
+    display: flex;
+}
+#background.night #GameOverText,
+#background.night #GameOverShText,
+#background.night #GameOverShScore {
+    color: white !important;
+}
+#GameOverMenu > #GameOverText {
+    /* position: absolute;
+    width: 25vw;
+    height: 4vh;
+    left: 37.5vw;
+    top: 20vh;
+    z-index: 1000; */
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 5vh;
+    resize: both;
+    color: #3D3D3D;
+    text-align: center;
+}
+#GameOverMenu > #GameOverShText {
+    /* margin:auto;
+    position: absolute;
+    width: 25vw;
+    height: 4vh;
+    left: 50vw;
+    transform: translate(-25%);
+    top: 34vh; */
+    margin: 32px 0;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 5vh;
+    resize: both;
+    color: #3D3D3D;
+    text-align: center;
+}
+#GameOverMenu > #GameOverShText > #GameOverShScore {
+    /* z-index: 1000; */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* left: 0; */
+    text-align: center;
+    /* height: 100%; */
+    margin: auto;
+    /* top: 5%; */
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 90%;
+    resize: both;
+    color: #3D3D3D;
+}
+#background.night #GameOverMenu > #GameOverShText > #GameOverShScore.highscore {
+    color: #3d3d3d !important;
+}
+#GameOverMenu > #GameOverShText > #GameOverShScore.highscore {
+    padding: 4px 8px;
+    background-color: #FFD700;
+    border-radius: 8px;
+}
+#GameOverMenu > #GameOverRestartButton {
+    /* z-index: 2; */
+    /* left: 44%; */
+    overflow: hidden;
+    /* top: 44%; */
+    border-style: solid;
+    border-color: dimgrey;
+    border-radius: 5%;
+    border-width: 0.5%;
+    width: 12vw;
+    height: 12vw;
+    cursor: pointer;
+    /* padding-bottom: 12%; */
+    
+    /* position: absolute; */
+    position: relative;
+    background-color: #3D3D3D;
+}
+#GameOverMenu > #GameOverRestartButton:hover {
+    color: #2c2c2c
+}
+#GameOverMenu > #GameOverRestartButton:hover > #restartSvg {
+    transform: rotate(-360deg);
+}
+#GameOverMenu > #GameOverRestartButton > #restartSvg {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    transition: 0.5s;
+}
+
+#tutorial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+#tutorial.shown {
+    opacity: 1;
+}
+.arrow .desktop {
+    display: block;
+}
+.arrow .mobile {
+    display: none;
+}
+/* .arrow .idle,
+.arrow .pressed {
+    display: none;
+} */
+#moveLeft {
+    animation: ease-in-out 2s 0s infinite blink-background;
+}
+#moveRight {
+    animation: ease-in-out 2s -1s infinite blink-background;
+}
+#moveLeft .idle,
+#moveRight .pressed {
+    animation: 2s 0s infinite blinkR;
+}
+#moveLeft .pressed,
+#moveRight .idle {
+    animation: 2s 0s infinite blinkL;
+}
+/* #moveRight .idle {
+    display: block;
+} */
+/* #moveLeft .pressed,
+#moveRight .pressed {
+    display: block;
+} */
+@keyframes blinkR {
+    0% { height: auto; opacity: 1; }
+    50% { height: auto; opacity: 1; }
+    51% { height: 0; opacity: 0; }
+    100% { height: 0; opacity: 0; }
+}
+@keyframes blinkL {
+    0% { height: 0; opacity: 0; }
+    50% { height: 0; opacity: 0; }
+    51% { height: auto; opacity: 1; }
+    100% { height: auto; opacity: 1; }
+}
+@keyframes blink-background {
+    0% { background-color: transparent; }
+    45% { background-color: transparent; }
+    55% { background-color: rgba(0, 0, 0, 0.1); }
+    100% { background-color: rgba(0, 0, 0, 0.1); }
+}
+
+.arrow .desktop {
+    transform: scale(1.75);
+}
+@media (max-width: 800px) {
+    .arrow .desktop {
+        display: none;
+    }
+    .arrow .mobile {
+        display: block;
+    }
+}
